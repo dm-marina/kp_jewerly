@@ -1,0 +1,84 @@
+@media(min-width:$widthS){
+   .article{
+    @include flex-column;
+    background-color: $color-light;
+    color: $color-dark;
+
+        .article-wrap{
+            @include mini-wrapper;
+
+            .article-content{
+                @include flex-column;
+
+                .mini-text{
+                    font-weight: normal;   
+                }
+            }
+
+            .article-cards{
+                @include flex-wrap;
+                justify-content: space-around;
+                margin-bottom: $margin-s;
+
+                .article-card{
+                    text-decoration: none;
+                    color: $color-light;
+                    font-size: $text-size-L;
+                    vertical-align: bottom;
+                    text-align: center;
+                    align-items:flex-end;
+                    justify-content: center;
+                    padding:0px 72px 35px 72px;
+                    margin-top: 30px;
+                    @include bacgroundImg-settings;
+                    width: 350px;
+                    height: 370px;
+                }
+                .article-card:nth-child(1){
+                    background-image: url(../images/wife.svg);
+                }
+                .article-card:nth-child(2){
+                    background-image: url(../images/husband.svg);
+                }
+                .article-card:nth-child(3){
+                    background-image: url(../images/newlyweds.svg);
+                }
+            }
+
+            .article-btn{
+                margin-bottom: $margin-s;
+                @include btn;
+            }
+        }
+   } 
+}
+@media(min-width:$widthL){
+    .article{
+
+        .article-wrap{
+            margin: $margin-xl 0px 0px 0px;
+
+            .mini-text{
+                font-size: $text-size-M;
+            }
+            .main-text{
+                font-size: $text-size-XL;
+            }
+
+            .article-cards{
+                margin-top: $margin-s;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                max-width: 1110px;
+
+                .article-card{
+                    margin-top: 0;
+                    margin-right: 30px;
+                }
+                .article-card:nth-child(3){
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

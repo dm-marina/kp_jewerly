@@ -1,0 +1,134 @@
+@media(min-width:320px){
+    .maling{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 320px;
+        background-image: url(../images/salons-bg.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+    }
+    .maling-wrap{
+        margin: 30px 35px 0px 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .maling-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mini-text{
+        font-weight: normal;
+        font-size: 18px;
+        text-align: center;
+    }
+    .main-text{
+        font-size: 24px;
+        text-align: center;
+    }
+    .maling-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .maling-links{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .maling-link{
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .maling-link::before{
+        content: "";
+        display: inline-block;
+        background-image: url(../images/maling-vector.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 17px;
+        height: 17px;
+        margin-right: 20px;
+    }
+    .maling-submit{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #fff;
+        padding: 14px 15px 14px 15px;
+        margin-bottom: 60px;
+    }
+    .maling-submit-wrap{
+        background-color: #fff;
+        padding: 20px 22px 20px 22px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .input-email{
+        color: rgba(51, 51, 51, 0.5);
+        text-transform: uppercase;
+        font-size: 14px;
+        padding: 14px 87px 14px 42px;
+    }
+    .btn-submit{
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+        padding: 15px 35px 15px 35px ;
+        border:1px solid #FFFFFF;
+        background: #333333;
+        margin-top: 15px;
+    }
+
+}
+@media(min-width:1024px){
+    .maling{
+        min-width:1024px;
+    }
+    .maling-wrap{
+        margin: 100px 0px 0px 0px;
+    }
+    .mini-text{
+        font-size: 21px;
+    }
+    .main-text{
+        font-size:30px;
+    }
+    .maling-content{
+        flex-direction: row;
+        align-items: center;
+        vertical-align: top;
+        margin-top: 60px;
+        margin-bottom: 120px;
+        justify-content: space-between;
+    }
+    .maling-links{
+        margin-top: 0;
+        margin-right: 80px;
+    }
+    .maling-link:last-child{
+        margin-bottom: 0;
+    }
+    .maling-submit-wrap{
+        flex-direction: row;
+    }
+    .maling-submit{
+        margin-bottom: 0;
+    }
+    .input-email{
+        margin-right: 15px;
+    }
+    .btn-submit{
+        margin-top: 0;
+    }
+}

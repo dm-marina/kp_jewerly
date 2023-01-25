@@ -1,0 +1,54 @@
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin bacgroundImg-settings{
+    background-position: center;
+    background-repeat:no-repeat;
+}
+
+@mixin flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+@mixin btn{
+    text-transform: uppercase;
+    font-size: $text-size-S;
+    color: $color-light;
+    text-align: center;
+    padding: 15px 35px 15px 35px ;
+    border: 1px solid $color-light;
+    background: $color-dark;
+}
+
+@mixin mini-text-S{
+    font-weight: normal;
+    font-size: $text-size-S;
+    text-align: center;
+}
+@mixin main-text-S{
+    font-size: $text-size-L;
+    text-align: center;
+}
+@mixin flex{
+    display: flex;
+    align-items: center;
+
+}
+@mixin mini-wrapper{
+    margin: 30px 35px 0px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+

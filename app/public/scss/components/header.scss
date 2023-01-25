@@ -1,0 +1,165 @@
+@media(min-width:$widthS){
+//     .header{
+//     @include flex-row;
+//     justify-content: space-between;
+
+//     .logo-img{
+//         width: $logo-width-L;
+//         height: $logo-heigh-L;
+//     }
+//     .mobile-btn{
+//         width: $mobile-btn-width;
+//         height: $mobile-btn-heigh;
+//         background-image: url(../images/mobile_btn.svg);
+//         @include bacgroundImg-settings;
+//         background-size: contain;
+//         background-color: transparent;
+//         border: none;
+//     }
+// }
+.header{
+    @include flex-column;
+    // background: $color-dark;
+
+    .header-wrapper{
+       @include flex-row;
+        justify-content: space-between;
+        margin: 0px 35px 0px 35px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        .menu{
+            display: none;
+        }
+
+        .logo-img{
+            width: 216px;
+            height: 52px;
+        }
+        .mobile-btn{
+            width: 34px;
+            height: 30px;
+            background-image: url(../images/mobile_btn.svg);
+            @include bacgroundImg-settings;
+            background-size: contain;
+            background-color: transparent;
+            border: none;
+        }
+    }
+
+}
+}
+@media(min-width:$widthL){
+//     .header{
+//         justify-content: space-around;
+//         background-color: none;
+//         align-items: center;
+
+//         .mobile-btn{
+//             display: none;
+//         }
+//         .menu{
+//             @include flex-row;
+//             margin-top: 18px;
+
+//             .link{
+//                 font-size: $text-size-XS;
+//                 color: $color-light;
+//                 margin-right: 40px;
+//                 text-decoration: none;
+//             }
+//             .link:nth-child(3){
+//                 margin-right: 0;
+//             }
+
+//             .search::before,.user::before, .like::before, .divider-horizontal::before, .divider-vertical::after,
+//             .card-img::before{
+//                 content:'';
+//                 @include bacgroundImg-settings;
+//                 display: block;
+//             }
+
+//             .search::before{
+//                 display: inline-block;
+//                 vertical-align: bottom;
+//                 width: 18px;
+//                 height: 18px;
+//                 background-image: url(../images/search.svg);
+//                 margin-right: 16px;
+//             }
+//             .user::before{
+//                 width: 16px;
+//                 height: 16px;
+//                 background-image: url(../images/user.svg);
+//                 margin-right: 30px; 
+//             }
+//             .like::before{
+//                 width: 17px;
+//                 height: 15px;
+//                 background-image: url(../images/like.svg);
+//             }
+//             .logo{
+//                 width: $logo-width-L;
+//                 height: $logo-heigh-L;
+//             }
+//         }
+//     }
+// }
+.header{
+    @include flex-row;
+    // align-items: center;
+    // .header-wrapper{
+    //     margin: 0;
+    //     justify-content: space-around;
+
+        .mobile-btn{
+            display: none;
+        }
+
+        .menu{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 18px;
+
+            .link{
+                font-size: $text-size-XS;
+                color: $color-light;
+                margin-right: 40px;
+                text-decoration: none;
+            }
+            .link:nth-child(3){
+                margin-right: 0;
+            }
+                    // before and after
+                    .search::before,.user::before, .like::before, .divider-horizontal::before, .divider-vertical::after,
+                    .card-img::before{
+                        content:'';
+                        @include bacgroundImg-settings;
+                        display: block;
+                    }
+            .search::before{
+                display: inline-block;
+                vertical-align: bottom;
+                width: 18px;
+                height: 18px;
+                background-image: url(../images/search.svg);
+                margin-right: 16px;
+            }
+            .user::before{
+                width: 16px;
+                height: 16px;
+                background-image: url(../images/user.svg);
+                margin-right: 30px;
+            }
+            .like::before{
+                width: 17px;
+                height: 15px;
+                background-image: url(../images/like.svg);
+            }
+        
+        }
+
+    // }
+}
+}

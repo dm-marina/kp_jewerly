@@ -1,0 +1,100 @@
+@media(min-width:320px){
+    .article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 320px;
+        background-color: #fff;
+        color: #333;
+    }
+    .article-wrap{
+        margin: 30px 35px 0px 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .article-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mini-text{
+        font-weight: normal;
+        font-size: 18px;
+    }
+    .main-text{
+        font-size: 24px;
+    }
+    .article-cards{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 60px;
+    }
+    .article-card{
+        text-decoration: none;
+        color: #fff;
+        font-size: 24px;
+        display: flex;
+        vertical-align: bottom;
+        text-align: center;
+        align-items:flex-end;
+        justify-content: center;
+        padding:0px 72px 35px 72px;
+        margin-top: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 350px;
+        height: 370px;
+    }
+    .article-card:nth-child(1){
+        background-image: url(../images/wife.svg);
+    }
+    .article-card:nth-child(2){
+        background-image: url(../images/husband.svg);
+    }
+    .article-card:nth-child(3){
+        background-image: url(../images/newlyweds.svg);
+
+    }
+    .article-btn{
+        text-transform: uppercase;
+        font-size: 18px;
+        color: #fff;
+        text-align: center;
+        padding: 15px 35px 15px 35px ;
+        border:1px solid #FFFFFF;
+        background: #333333;
+        margin-bottom: 60px;
+    }
+
+}
+@media(min-width:1024px){
+    .article{
+        min-width:1024px;
+    }
+    .article-wrap{
+        margin: 120px 0px 0px 0px;
+    }
+    .mini-text{
+        font-size: 21px;
+    }
+    .main-text{
+        font-size:30px;
+    }
+    .article-cards{
+        margin-top: 60px;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        max-width: 1110px;
+    }
+    .article-card{
+        margin-top: 0;
+        margin-right: 30px;
+    }
+    .article-card:nth-child(3){
+        margin-right: 0;
+    }
+}

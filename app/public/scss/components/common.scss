@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: $text-size-S;
+    font-family: $font-family1;
+}
+.text-s{
+    color: $color-dark;
+    font-size: $text-size-S;
+}
+.mini-text{
+    font-size: $text-size-M;
+    color: $color-dark;
+}
+.main-text{
+    font-size: $text-size-XL;
+    color: $color-dark;
+}

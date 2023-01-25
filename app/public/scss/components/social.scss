@@ -1,0 +1,100 @@
+@media(min-width:$widthS){
+    .social-networks{
+        @include flex-column;
+        background-color: $color-light;
+        color: $color-dark;
+
+        .social-wrap{
+            @include mini-wrapper;
+
+            .social-content{
+                @include flex-column;
+
+
+            }
+            .social-cards{
+                @include flex-wrap;
+                justify-content: center;
+                margin-bottom: $margin-s;
+                margin-top: $margin-s;
+                max-width: 1110px;
+
+                .social-card{
+                    @include bacgroundImg-settings;
+                }
+                .social-card:nth-child(1){
+                    background-image: url(../images/video-ring.svg);
+                }
+                .social-card:nth-child(1)::before, .social-card:nth-child::before(6){
+                    content: "";
+                    display: flex;
+                    position: relative;
+                    left: 40%;
+                    margin-top: 15%;
+                    background-image: url(../images/video.svg);
+                    background-size: cover;
+                    width: 70px;
+                    height: 70px;
+                }
+                .social-card:nth-child(2){
+                    background-image: url(../images/socialimg1.svg);
+                }
+                .social-card:nth-child(3){
+                    background-image: url(../images/socialimg2.svg);
+                }
+                .social-card:nth-child(4){
+                    background-image: url(../images/socialimg3.svg);
+                }
+                .social-card:nth-child(5){
+                    background-image: url(../images/socialimg4.svg);
+                }
+                .social-card:nth-child(6){
+                    background-image: url(../images/video-ring2.svg);
+                }
+                .social-card:nth-child(2), .social-card:nth-child(3), .social-card:nth-child(4), .social-card:nth-child(5){
+                    max-width: 278px;
+                    max-height: 300px;
+                    min-width: 150px;
+                    min-height: 163px; 
+                }
+                .social-card:nth-child(1), .social-card:nth-child(6){
+                    max-width: 555px;
+                    max-height: 300px;
+                    min-width: 300px;
+                    min-height: 162px;
+                }
+
+            }
+        }
+    }
+}
+@media(min-width:$widthL){
+    .social-networks{
+        .social-wrap{
+           margin: 0;
+           margin-top: $margin-s;
+
+            .social-content{
+                .mini-text{
+                    font-size: $text-size-M;
+                }
+                .main-text{
+                    font-size: $text-size-XL;
+                }
+            }
+            .social-cards{
+                justify-content: center;
+                margin-bottom: 150px;
+
+                .social-card:nth-child(1), .social-card:nth-child(6){
+                    min-width: 500px;
+                    min-height: 270px;
+                }
+                .social-card:nth-child(2), .social-card:nth-child(3), .social-card:nth-child(4), .social-card:nth-child(5){
+                    min-width: 250px;
+                    min-height: 270px;
+                }
+            }
+        }
+    }
+}

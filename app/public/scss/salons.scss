@@ -1,0 +1,64 @@
+@media(min-width:320px) {
+    .salons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 320px;
+        background-image: url(../images/salons-bg.svg);
+        background-position: center;
+        color: #fff;
+    }
+    .salons-wrap{
+        margin: 30px 35px 0px 35px;
+    }
+    .salons-content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+    .mini-text{
+        font-weight: normal;
+        font-size: 18px;
+    }
+    .main-text{
+        font-size: 24px;
+    }
+    .text{
+        margin-top: 45px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .salons-btn{
+        margin-top: 60px;
+        text-transform: uppercase;
+        font-size: 18px;
+        color: #333;
+        background-color: #fff;
+        border: 1px solid #333333;
+        padding: 15px 35px 15px 35px;
+    }
+    
+}
+@media(min-width:1024px){
+    .salons{
+        min-width: 1024px;
+    }
+    .salons-wrap{
+        margin: 100px 0px 0px 0px;
+    }
+    .salons-content{
+        margin-bottom: 100px;
+        max-width: 730px;
+    }
+    .mini-text{
+        font-size: 21px;
+    }
+    .main-text{
+        font-size:30px;
+    }
+    .text{
+        font-size: 18px;
+    }
+}

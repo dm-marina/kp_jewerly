@@ -1,0 +1,333 @@
+@media(min-width:$widthS){
+    .header{
+        background: $color-dark;
+    }
+    main{
+        .product{
+            @include flex-column;
+
+            .product-wrap{
+                @include mini-wrapper;
+
+                .breadcrumb{
+                    max-width: 468px;
+                    @include flex-row;
+                    @include flex-wrap;
+                    text-align: center;
+                    list-style-type: none;
+
+                    .breadcrumb-link{
+                        text-decoration: none;
+                        font-size: $text-size-XS;
+                        color: $color-dark;
+                        display: inline;
+                    }
+                    .slash::after{
+                        content: "/";
+                        display: inline;
+                    }
+                }
+                .product-card{
+                    @include flex-column;
+                    margin-top: 54px;
+
+                    .product-main-content{
+                        @include flex-column;
+                        text-align: center;
+
+                        .img-container{
+                            @include flex-column;
+                            max-width: 540px;
+
+                            .block-in{
+                                max-width: 540px;
+
+                                .desktop-img{
+                                    display: none;
+                                }
+                            }
+                            .block-in:nth-child(2){
+                                @include flex-row;
+                                justify-content: space-between;
+                                .desktop-img{
+                                    display: none;
+                                }
+                            }
+                        }
+                        .content-container{
+                            border: 1px solid #d6d6d6;
+                            @include flex-column;
+
+                            .wrap-border{
+                                @include flex-column;
+                                max-width: 460px;
+                                margin-right: 30px;
+                                margin-left: 30px;
+
+                                .title{
+                                    margin-top: 40px;
+                                    font-size: $text-size-L;
+                                    color: $color-dark;
+                                    font-weight: normal;
+                                }
+                                .about{
+                                    @include flex-row;
+                                    text-align: center;
+                                    justify-content: space-around;
+                                    margin-top: 30px;
+
+                                    .about-text{
+                                        font-size: $text-size-XS;
+                                        color: #979797;
+                                    }
+                                }
+                                .text-about-product{
+                                    font-size: $text-size-XS;
+                                    color: $color-dark;
+                                    text-align: center;
+                                }
+                                .text-price{
+                                    margin-top: 30px;
+                                    font-size: $text-size-L;
+                                    align-items: flex-start;
+                                    text-align: left;
+                                }
+                                .buttons{
+                                    @include flex-row;
+                                    justify-content: space-around;
+                                    margin-bottom: 40px;
+                                    margin-top: 30px;
+
+                                    .btn{
+                                        @include btn;
+                                        padding: 10px 20px 10px 20px;
+                                    }
+                                    .btn:nth-child(2){
+                                        @include btn;
+                                        background: #f9f9f9;
+                                        color: $color-dark;
+                                        border: 1px solid $color-dark;
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+                .product-mini-text{
+                    @include flex-column;
+                    margin-top: $margin-s;
+
+                    .text-content{
+                        position: relative;
+                        height: 240px;
+                        overflow: hidden;
+
+                        .show-more{
+                            position: absolute;
+                            color: $color-dark;
+                            text-align: left;
+                            bottom: 0;
+                            left: 0;
+                            text-transform: uppercase;
+                            text-decoration: 1px dashed underline $color-dark;
+                        }
+                        .public-shade{
+                            background: linear-gradient(180deg, rgba(249, 249, 249, 0) 0%, #F9F9F9 82.29%);
+                            position: absolute;
+                            bottom: 0;
+                            height: 200px;
+                            width: 100%;  
+                        }
+                    }
+                    .mini-cards{
+                        @include flex-row;
+                        margin-top: 30px;
+
+                        .mini-card{
+                            width: 50%;
+                            @include flex-column;
+                            margin-bottom: 30px;
+
+                            
+                            .delivery::before, .design::before, .wearing::before, .people-oriented::before{
+                                content: "";
+                                display: block;
+                                margin-bottom: 15px;
+                                @include bacgroundImg-settings;
+                                background-size: cover;
+                            }
+                            .delivery::before{
+                                background-image: url(../images/delivery.svg);
+                                width: 70px;
+                                height: 70px;
+                            }
+                            .design::before{
+                                background-image: url(../images/design.svg);
+                                width: 55px;
+                                height: 70px;
+                            }
+                            .wearing::before{
+                                background-image: url(../images/wearing.svg);
+                                width: 68px;
+                                height: 68px;
+                            }
+                            .people-oriented::before{
+                                background-image: url(../images/people-oriented.svg);
+                                width: 70px;
+                                height: 70px;
+                            }
+                            .card-text{
+                                font-size: $text-size-S;
+                                color: #000;
+                                max-width: 90px;
+                            }
+                        }
+                        .mini-card:nth-child(3), .mini-card:nth-child(4){
+                            margin-bottom: 0;
+                        } 
+                    }
+                }
+            }
+            .proposition{
+                @include flex-column;
+                margin-top: $margin-s;
+                margin-bottom: $margin-m;
+
+                .main-text{
+                    margin-top: 15px;
+                }
+                .cards-proposition{
+                    @include flex-column;
+
+                    .product-card{
+                        align-items: center;
+                        text-align: center;
+
+                        .name{
+                            font-size: $text-size-S;
+                            color: $color-dark;
+                            text-align: center;
+                        }
+                        .firm{
+                            font-size: $text-size-L;
+                            color: $color-dark;
+                            font-weight: bold;
+                            margin-top: 10px;
+                        }
+                        .price{
+                            background-color: $color-dark;
+                            color: $color-light;
+                            padding: 10px 20px;
+                            margin-top: 15px;
+                        }
+
+                        .pict::before{
+                            content: "";
+                            display: block;
+                            width: 280px;
+                            height: 220px;
+                            background-image: url(../images/product.svg);
+                            margin-bottom: 25px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+@media(min-width:$widthL){
+    main{
+        .product{
+            .product-wrap{
+                margin: 0;
+                margin-top: $margin-s;
+
+                .breadcrumb{
+                    max-width: auto;
+                    justify-content: space-between;
+
+                    .breadcrumb-link{
+                        font-size: $text-size-XS;
+                    }
+                }
+
+                .product-card{
+                    max-width: 1120px;
+                    align-self: center;
+
+                    .product-main-content{
+                        flex-direction: row;
+                        max-width: 1120px;
+                        justify-content: space-between;
+                        align-items: flex-start;
+
+                        .img-container{
+                            width: 50%;
+                            max-width: 540px;
+                            margin-top: 0;
+                            margin-right: 30px;
+
+                            .block-in:nth-child(1){
+                                width: 540px;
+                                height: 430px;
+                                margin-bottom: 30px;
+
+                                .desktop-img{
+                                    display: inline;
+                                }
+                                .mobile-img{
+                                    display: none;
+                                }
+                            }
+                            .block-in:nth-child(2){
+                                .desktop-img{
+                                    display: inline;
+                                }
+                                .mobile-img{
+                                    display: none;
+                                }
+                            }
+                        }
+                        .content-container{
+                            min-width: 540px;
+                            margin-top: 0;
+                            width: 50%;
+                        }
+                    }
+                    .product-mini-text{
+                        @include flex-row;
+                        align-items: flex-start;
+                        justify-content: center;
+                        text-align: center;
+                        margin-top: 120px;
+                        max-width: 920px;
+
+                        .text-content{
+                            max-width: 540px;
+                        }
+                        .mini-cards{
+                            margin: 0;
+                        }
+                    }
+                }
+                .proposition{
+                    margin-top: 120px;
+                    max-width: 1110px;
+
+                    .mini-text{
+                        font-size: $text-size-M;
+                    }
+                    .main-text{
+                        font-size: $text-size-XL;
+                    }
+                    .cards-proposition{
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+    }
+}

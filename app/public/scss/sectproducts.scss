@@ -1,0 +1,146 @@
+@media(min-width:320px){
+    .products{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        position: relative;
+        min-width: 320px;
+        color: #333333;
+    }
+    .products-wrapper{
+        margin:80px 15px 0px 15px
+    }
+    .content-products{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    .title-sect{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .mini-text{
+       margin-bottom: 18px; 
+    }
+    .main-text{
+        font-size: 24px;
+        font-weight: bold;
+        font-family: 'Noto-Serif';
+    }
+    .holidays{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .holiday{
+        width: 30%;
+        font-size: 14px;
+        border: 1px solid #D6D6D6;
+        background: #F9F9F9;
+        color: #333333;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-top: 15px;
+        text-align: center;
+        padding: 6px 0px 6px 0px;
+        box-shadow: 6px 6px 6px 1px #D6D6D6 ;
+    }
+    .holiday:active, .holiday:hover{
+        background:#333333;
+        box-shadow: 6px 6px #333333;
+        color: #fff;
+        border: #333333;
+    }
+    .cards-products{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .card-products{
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        font-size: 24px;
+        display: flex;
+        vertical-align: bottom;
+        text-align: center;
+        align-items:flex-end;
+        justify-content: center;
+        padding-bottom: 30px;
+        margin-top: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 350px;
+        height: 280px;
+    }
+    .card-products:nth-child(1){
+        background-image: url(../images/rings.svg);
+        margin-top: 0;
+    }
+    .card-products:nth-child(2){
+        background-image: url(../images/earrings.svg);
+    }
+    .card-products:nth-child(3){
+        background-image: url(../images/pendant.svg);
+    }
+    .card-products:nth-child(4){
+        background-image: url(../images/cufflinks.svg);
+    }
+    .card-products:nth-child(5){
+        background-image: url(../images/braslets.svg);
+    }
+    .card-products:nth-child(6){
+        background-image: url(../images/clock.svg);
+    }
+}
+@media(min-width:1024px){
+    .products{
+        min-width: 1024px;
+    }
+    .products-wrapper{
+        margin: 100px 0px 0px 0px;
+    }
+    .content-products{
+        margin-bottom: 120px;
+    }
+    .mini-text{
+        font-size: 21px;
+    }
+    .main-text{
+        font-size: 30px;
+    }
+    .holidays{
+        margin-top: 60px;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+    }
+    .holiday{
+        width: auto;
+        margin-top: 0;
+        margin-right: 18px;
+        padding: 6px 35px 6px 35px;
+    }
+    .cards-products{
+        margin-top: 55px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        max-width: 1110px;
+    }
+    .card-products{
+        margin: 0px 0px 30px 0px;
+    }
+    .card-products:nth-child(4),.card-products:nth-child(5),.card-products:nth-child(6){
+        margin-bottom: 0;
+    }
+}

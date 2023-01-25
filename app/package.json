@@ -1,0 +1,43 @@
+{
+    "name": "jewerly",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "md",
+    "license": "ISC",
+    "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-watch": "^5.0.1",
+    "sass": "^1.35.2"
+    },
+    "dependencies": {
+      "@dmitriym09/web-minify": "^0.0.1",
+      "animate.css": "^4.1.1",
+      "bootstrap": "^5.0.2",
+      "bootstrap-icons": "^1.5.0",
+      "ejs": "^3.1.8",
+      "express": "^4.18.2",
+      "mime": "^3.0.0",
+      "mysql": "^2.18.1",
+      "mysql2": "^2.3.3",
+      "node-static": "^0.7.11",
+      "sql": "^0.78.0"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/dm-marina/kp_jewerly.git"
+    },
+    "bugs": {
+      "url": "https://github.com/dm-marina/kp_jewerly.git"
+    },
+    "homepage": "",
+    "description": ""
+  }
+  

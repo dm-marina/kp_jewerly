@@ -1,0 +1,118 @@
+@media(min-width:$widthS){
+    .maling{
+        @include flex-column;
+        background-image: url(../images/salons-bg.png);
+        @include bacgroundImg-settings;
+        background-size: cover;
+        color: $color-light;
+
+        .maling-wrap{
+            @include mini-wrapper;
+
+            .maling-text{
+                @include flex-column;
+
+            }
+            .maling-content{
+                @include flex-column;
+
+                .maling-links{
+                    @include flex-column;
+                    margin-top: 30px;
+
+                    .maling-link{
+                        text-decoration: none;
+                        color:$color-light;
+                        font-size: $text-size-S;
+                        margin-bottom: 15px;
+                    }
+                    .maling-link::before{
+                        content: "";
+                        display: inline-block;
+                        background-image: url(../images/maling-vector.svg);
+                        @include bacgroundImg-settings;
+                        background-size: cover;
+                        width: 17px;
+                        height: 17px;
+                        margin-right: 20px; 
+                    }
+                }
+                .maling-submit{
+                    @include flex-column;
+                    border: 1px solid $color-light;
+                    padding: 15px;
+                    margin-bottom: 60px;
+
+                    .maling-submit-wrap{
+                        background-color: $color-light;
+                        padding: 20px 22px 20px 22px;
+                        @include flex-column;
+
+                        .input-email{
+                            color: rgba(51, 51, 51, 0.5);
+                            text-transform: uppercase;
+                            font-size: $text-size-XS;
+                            padding: 14px 87px 14px 42px;
+                        }
+
+                        .btn{
+                            @include btn;
+                            margin-top: 15px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width:$widthL){
+    .maling{
+
+        .maling-wrap{
+            margin: $margin-l 0px 0px 0px;
+
+           .maling-text{
+
+                .mini-text{
+                    font-size: $text-size-M;
+                }
+                .main-text{
+                   font-size: $text-size-XL;
+                }
+           }
+           .maling-content{
+            @include flex-row;
+            vertical-align: top;
+            margin-top: 60px;
+            margin-bottom: 120px;
+            justify-content: space-between;
+
+            .maling-links{
+                margin-top: 0;
+                margin-right: 80px;
+
+                .maling-link:last-child{
+                    margin-bottom: 0;
+                }
+
+            }
+           } 
+           .maling-submit{
+                margin-bottom: 0;
+
+                .maling-submit-wrap{
+                    flex-direction: row;
+
+                    .input-email{
+                        margin-right: 15px;
+                    }
+                    .btn{
+                        margin-top: 0;
+                    }
+                }
+
+            }
+        }
+    }
+}
